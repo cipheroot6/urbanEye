@@ -1,9 +1,7 @@
-import dynamic from "next/dynamic"
+import { LiveMap } from "@/components/map/LiveMapWrapper"
 
-const LiveMap = dynamic(() => import("@/components/map/LiveMap").then(m => m.LiveMap), {
-  ssr: false,
-  loading: () => <div className="h-full w-full animate-pulse bg-muted rounded-lg" />,
-})
+
+
 
 export default function MapPage() {
   return (

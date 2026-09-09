@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
 import { IngestSchema } from "@/lib/validations/ingest"
 import { supabaseAdmin } from "@/lib/db"

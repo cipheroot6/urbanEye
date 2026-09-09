@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { DeckGL } from "@deck.gl/react"
 import { HeatmapLayer } from "@deck.gl/aggregation-layers"
-import { Map } from "react-map-gl"
+import Map from "react-map-gl/maplibre"
 import type { EventRow } from "@/types"
 
 type Props = { events: EventRow[] }
