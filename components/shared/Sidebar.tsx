@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import { Map, AlertTriangle, BarChart2, Bus, FileText, LayoutDashboard } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const NAV = [
+export const NAV = [
   { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
   { href: "/map", label: "Live Map", icon: Map },
   { href: "/incidents", label: "Incidents", icon: AlertTriangle },
@@ -18,7 +18,7 @@ export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="w-60 border-r bg-card flex flex-col p-4 gap-1">
+    <aside className="hidden md:flex w-60 border-r bg-card flex-col p-4 gap-1">
       <div className="mb-6 px-2">
         <h1 className="text-lg font-bold tracking-tight">UrbanEye</h1>
         <p className="text-xs text-muted-foreground">Urban Intelligence Platform</p>
