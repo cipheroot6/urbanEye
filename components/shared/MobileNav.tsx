@@ -19,7 +19,7 @@ export function MobileNav() {
         <h1 className="text-lg font-bold tracking-tight">UrbanEye</h1>
       </div>
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger asChild>
+        <SheetTrigger>
           <Button variant="ghost" size="icon">
             <Menu className="h-6 w-6" />
           </Button>
