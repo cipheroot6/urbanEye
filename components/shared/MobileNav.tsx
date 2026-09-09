@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 import { NAV } from "./Sidebar"
 import { cn } from "@/lib/utils"
-import * as DialogPrimitive from "@radix-ui/react-dialog"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
@@ -26,8 +25,8 @@ export function MobileNav() {
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="w-64 p-4 flex flex-col gap-1">
-          <DialogPrimitive.Title className="sr-only">Navigation Menu</DialogPrimitive.Title>
-          <DialogPrimitive.Description className="sr-only">Access all dashboard pages</DialogPrimitive.Description>
+          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+          <SheetDescription className="sr-only">Access all dashboard pages</SheetDescription>
           <div className="mb-6 px-2 mt-4">
             <h1 className="text-lg font-bold tracking-tight">UrbanEye</h1>
             <p className="text-xs text-muted-foreground">Urban Intelligence Platform</p>
